@@ -1,0 +1,38 @@
+@page
+@model IndexModel
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Grade Studio | C#</title><link rel="stylesheet" href="/style.css" asp-append-version="true"></head>
+<body><main>
+<header><span class="eyebrow">SWE40006 / TASK 3.2 / C#</span><h1>Grade Studio<span>.</span></h1><p>Turn your assessment marks into a clear result.</p></header>
+<div class="calculator-layout">
+<section class="card"><h2>Calculate your result</h2><p class="muted">Enter marks from 0 to 100. Activities contribute 20%, project 40%, and examination 40%.</p>
+<form method="post">
+<div asp-validation-summary="All" class="errors" role="alert"></div>
+<label asp-for="Activities">Deployment activities <small>20%</small></label><input asp-for="Activities" type="number" min="0" max="100" step="any" required placeholder="e.g. 85">
+<label asp-for="Project">Project <small>40%</small></label><input asp-for="Project" type="number" min="0" max="100" step="any" required placeholder="e.g. 80">
+<label asp-for="Examination">Examination <small>40%</small></label><input asp-for="Examination" type="number" min="0" max="100" step="any" required placeholder="e.g. 75">
+<div class="actions"><button type="submit">Calculate grade &rarr;</button><a href="/">Clear</a></div>
+</form></section>
+<aside class="result" aria-labelledby="result-heading" aria-live="polite">
+<span class="eyebrow">YOUR WEIGHTED RESULT</span>
+@if (Model.Result is { } result)
+{
+    <div class="result-content">
+        <strong class="score">@result.Total.ToString("F2")<small> / 100</small></strong>
+        <h2 id="result-heading">@result.Grade</h2>
+        <p>Your result combines activities (20%), project (40%) and examination (40%).</p>
+    </div>
+}
+else
+{
+    <div class="result-content empty-result">
+        <h2 id="result-heading">Your result appears here</h2>
+        <p>Enter your three assessment marks and select Calculate grade to see your weighted result.</p>
+    </div>
+}
+<div class="grade-guide"><span>GRADE GUIDE</span><p>HD 80+ &middot; D 70+ &middot; C 60+ &middot; P 50+</p></div>
+</aside>
+</div>
+<footer>Demonstration calculator &middot; Rounded to two decimal places before classification.<br>HD 80+ &middot; D 70+ &middot; C 60+ &middot; P 50+ &middot; This is not an official results service.<br><a href="/health">Application health</a></footer>
+</main></body></html>

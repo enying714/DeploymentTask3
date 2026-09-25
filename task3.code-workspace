@@ -1,0 +1,4 @@
+{
+  "folders": [{ "path": "." }],
+  "extensions": { "recommendations": ["ms-dotnettools.csdevkit", "ms-azuretools.vscode-azureappservice"] }
+}
