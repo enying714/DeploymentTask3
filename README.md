@@ -1,5 +1,10 @@
 # SWE40006 Deployment Activity 3 – Azure Web Deployment
 
+**Student:** Cheong En Ying (105965515)  
+**Unit:** SWE40006 Software Deployment and Evolution  
+**Assessment:** Deployment Activity 3 – Azure Web Deployment  
+**Task level attempted:** Task 3.3 – High Distinction, including Tasks 3.1 and 3.2
+
 ## Project Overview
 
 This repository provides the application source code, tests and packaging scripts for **Deployment Activity 3** in **SWE40006 Software Deployment and Evolution**.
@@ -189,13 +194,7 @@ The PHP log contained certificate warnings, a missing Oryx manifest message and 
 
 These messages are not presented as application defects that were all removed. The report distinguishes platform startup messages from failures that required correction, and records the supporting screenshots.
 
-## Repository Purpose and Acknowledgement
+## Repository Purpose
 
 This repository provides source code and scripts for assignment verification. The submitted report contains the detailed evidence, analysis and references. Generated build output, local runtimes, Azure publishing credentials and deployment packages do not belong in the public source repository.
 
-Generative AI assistance was used for application code, tests, styling, deployment guidance, troubleshooting explanations and documentation. The report records the deployment and verification evidence from the student environment.
-
-**Student:** Cheong En Ying (105965515)  
-**Unit:** SWE40006 Software Deployment and Evolution  
-**Assessment:** Deployment Activity 3 – Azure Web Deployment  
-**Task level attempted:** Task 3.3 – High Distinction, including Tasks 3.1 and 3.2
