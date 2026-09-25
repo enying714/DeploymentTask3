@@ -2,8 +2,8 @@
 
 **Student:** Cheong En Ying (105965515)  
 **Unit:** SWE40006 Software Deployment and Evolution  
-**Assessment:** Deployment Activity 3 – Azure Web Deployment  
-**Task level attempted:** Task 3.3 – High Distinction, including Tasks 3.1 and 3.2
+**Assessment:** Deployment Task 3
+**Task level attempted:** Task 3.3 – High Distinction
 
 ## Project Overview
 
